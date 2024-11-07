@@ -143,7 +143,7 @@ h2, h3{
 .wrapper .card:nth-child(8) {
     grid-area: h;
 }
-@media screen and (width > 668px) {
+@media screen and (width > 668px) and (width < 1200px) {
     .wrapper {
         grid-template-areas: 
         "a a"
@@ -152,6 +152,23 @@ h2, h3{
         "f g"
         "c c";
     }
+    .card{
+        padding: 1rem;
+    }
+    .wrapper .card:nth-child(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 1.5rem;
+    }
+    .wrapper .card:nth-child(3) h3 {
+        font-size: 2.5rem;
+    }
+    .wrapper .card:nth-child(2) h2 {
+        font-size: 2.5rem;
+        
+    }
+    
 }
 @media screen and (width > 1200px) {
 
